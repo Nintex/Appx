@@ -95,8 +95,8 @@ void Html::connRecvFinished( Connection* conn, int result )
 {
 	weerDataRecv[result]= '\0';
 
-		//printf(weerDataRecv);
-		puts(weerDataRecv);
+	//Prints raw html data to screen.
+		printf(weerDataRecv);
 
 	//blijf lezen met 1024 bytes (zie onder) tot result einde van de site heeft bereikt (waarbij result < 0)
     if(result >= 0)
