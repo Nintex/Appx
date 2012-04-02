@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JQuery Mobile</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+<style type="text/css">
+.img {
+	padding-left: 70px;
+}
+</style>
+</head>
+
+<body>
+<div data-role="page" data-theme="b" id="home">
+
+  <div data-role="content"> 
+    <img src="img/logo.png" width="300" height="211" alt="agile logo">
+    <ul data-role="listview" data-inset="true">
+	  	<li><a href="#About" data-transition="flip">About</a></li>
+		<li><a href="#Portfolio" data-transition="slideup">Portfolio</a></li>
+		<li><a href="#Contact" data-transition="fade">Contact</a></li>
+		<li><a href="news.html">News</a></li>
+	</ul> 
+  </div>
+  
+</div>
+<div data-role="page" data-theme="b" id="About">
+
+  <div data-role="header" data-position="inline">
+  	<a href="#home" data-role="button" data-icon="grid" data-back="true" data-theme="e">Back</a>
+    <h1>About <img src="img/a.png" width="20" height="13" alt="agile mini logo"></h1>
+  </div>
+
+  <div data-role="content"> 
+    <h3>Agile Design Solutions</h3>
+    <p><img src="img/man.png" alt="Man" width="100" height="207" align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla gravida est volutpat lacinia. Mauris est orci, aliquet sit amet dapibus eu, mattis volutpat urna. Mauris adipiscing nulla interdum sapien pulvinar malesuada. Nulla facilisi. Praesent tincidunt rutrum luctus. Aliquam erat volutpat. Nulla facilisi. Nunc orci justo, rutrum nec porttitor nec, interdum sed orci. </p> <div data-role="content" data-theme="e"><p>Proin rutrum elementum eros, eu mattis ligula vulputate quis. Ut mollis erat et magna congue egestas. Integer iaculis volutpat tellus.</p></div>    
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; Web Designer</h4>
+  </div>
+</div>
+<div data-role="page" data-theme="b" id="Portfolio">
+
+  <div data-role="header">
+    <h1>Portfolio <img src="img/a.png" width="20" height="13" alt="agile mini logo"></h1>
+  </div>
+
+  <div data-role="content"> 
+    <ul data-role="listview" data-dividertheme="b">
+		<li data-role="list-divider">Latest Work</li>
+        <li class="img"><img src="img/thumb1.jpg" alt="project thumbnail" class="ui-li-icon"/><h3>iPad Digital Publishing</h3><br>
+		Mobile tablets are becoming increasingly important ares to target for traditional print media and our solutions have worked for Imagine Publishing.</li>
+		<li class="img"><img src="img/thumb2.jpg" alt="project thumbnail" class="ui-li-icon"/><h3>Illustrator to Canvas</h3><br>
+		Targetting the canvas element we can make your illustrations come to life with animation on mobile devices.</li>
+		<li class="img"><img src="img/thumb3.jpg" alt="project thumbnail" class="ui-li-icon"/><h3>Web Apps go Native</h3><br>
+		Our solutions enable web apps to go native on a broad range of devices such as Android, Blackberry and iOS.</li>
+    </ul>   
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; Web Designer</h4>
+  </div>
+</div>
+<div data-role="page" data-theme="b" id="Contact">
+
+  <div data-role="header">
+    <h1>Contact <img src="img/a.png" width="20" height="13" alt="agile mini logo"></h1>
+  </div>
+
+  <div data-role="content"> 
+    <form action="#" method="get">
+    	<p>We want to hear from you!</p>
+
+			<div data-role="fieldcontain">
+	         <label for="name">Name:</label>
+	         <input type="text" name="name" id="name" value=""  />
+			</div>
+			 
+			<div data-role="fieldcontain">
+			<label for="textarea">Address:</label>
+			<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+			</div>
+            
+            <div data-role="fieldcontain">
+				<label for="slider2">Do you want regular updates:</label>
+				<select name="slider2" id="slider2" data-role="slider">
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+				</select> 
+			</div>
+            
+            <div data-role="fieldcontain">
+			<fieldset data-role="controlgroup">
+				<legend>Choose services you are interested in:</legend>
+				<input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom" />
+				<label for="checkbox-1a">iOS</label>
+
+				<input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+				<label for="checkbox-2a">Android</label>
+				
+				<input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+				<label for="checkbox-3a">Blackberry</label>
+
+		    </fieldset>
+			</div>
+            
+            <div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup">
+			    	<legend>How did you hear of us:</legend>
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+			         	<label for="radio-choice-1">Online</label>
+
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+			         	<label for="radio-choice-2">Friend</label>
+
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+			         	<label for="radio-choice-3">Advert</label>
+			    </fieldset>
+			</div>
+            
+            <div class="ui-body ui-body-b">
+		<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><button type="submit" data-theme="d">Cancel</button></div>
+				<div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>	   
+	    </fieldset>
+		</div>
+	</form>     
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; Web Designer</h4>
+  </div>
+</div>
+</body>
+</html>
