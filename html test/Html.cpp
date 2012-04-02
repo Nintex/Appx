@@ -6,9 +6,6 @@
  */
 
 #include "Html.hpp"
-#include <stdio.h>
-#include <stdlib.h>
-
 
 //hulpfunctie
 char* zoekWoord(char* buffer, char* testString)
@@ -96,7 +93,7 @@ void Html::connRecvFinished( Connection* conn, int result )
 	weerDataRecv[result]= '\0';
 
 	//Prints raw html data to screen.
-		printf(weerDataRecv);
+	printf(weerDataRecv);
 
 	//blijf lezen met 1024 bytes (zie onder) tot result einde van de site heeft bereikt (waarbij result < 0)
     if(result >= 0)
